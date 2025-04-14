@@ -1,0 +1,121 @@
+<html>
+<html lang="it">
+<head> <link rel="stylesheet" href="style.css">
+  <body> <script src="script.js" defer></script>
+<h1>🛸 Quanto ci mettiamo a viaggiare nello spazio?</h1>
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <button onclick="toggleTheme()" id="themeToggle">🌙 Attiva modalità chiara</button>
+</div>
+
+<input type="number" id="distanza" placeholder="Distanza in anni luce">
+<button onclick="calcolaTempo()">Calcola</button>
+
+<div class="risultati" id="risultati"></div>
+
+<section id="sonde">
+  <h2>Sonde Spaziali Più Veloci (dati aggiornati ad Aprile 2025)</h2>
+  <div class="grid-sonde">
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Parker_Solar_Probe_artist_depiction.jpg" alt="Parker Solar Probe">
+      <div class="info">
+        <h3>Parker Solar Probe</h3>
+        <p>🚀 Anno di lancio: 2018</p>
+        <p>💨 Velocità: 192 km/s</p>
+        <p>🌍 Distanza: ~0.1 AU (15 milioni km)</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Helios_Probe.jpg" alt="Helios 2">
+      <div class="info">
+        <h3>Helios 2</h3>
+        <p>🚀 Anno di lancio: 1976</p>
+        <p>💨 Velocità: 70.2 km/s</p>
+        <p>🌍 Distanza: ~0.29 AU (43 milioni km)</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Helios_probe.jpg" alt="Helios 1">
+      <div class="info">
+        <h3>Helios 1</h3>
+        <p>🚀 Anno di lancio: 1974</p>
+        <p>💨 Velocità: 66 km/s</p>
+        <p>🌍 Distanza: ~0.31 AU (46 milioni km)</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Voyager_spacecraft_model.png" alt="Voyager 1">
+      <div class="info">
+        <h3>Voyager 1</h3>
+        <p>🚀 Anno di lancio: 1977</p>
+        <p>💨 Velocità: 17 km/s</p>
+        <p>🌍 Distanza: ~159 AU (23.8 miliardi km)</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/New_Horizons_Artist%27s_Concept.jpg" alt="New Horizons">
+      <div class="info">
+        <h3>New Horizons</h3>
+        <p>🚀 Anno di lancio: 2006</p>
+        <p>💨 Velocità: 14 km/s</p>
+        <p>🌍 Distanza: ~57 AU (8.5 miliardi km)</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Voyager.jpg" alt="Voyager 2">
+      <div class="info">
+        <h3>Voyager 2</h3>
+        <p>🚀 Anno di lancio: 1977</p>
+        <p>💨 Velocità: 15 km/s</p>
+        <p>🌍 Distanza: ~132 AU (19.7 miliardi km)</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Galileo_Space_Probe.jpg" alt="Galileo">
+      <div class="info">
+        <h3>Galileo</h3>
+        <p>🚀 Anno di lancio: 1989</p>
+        <p>💨 Velocità: 48 km/s</p>
+        <p>🌍 Distanza: Missione conclusa nel 2003</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Juno_-_PIA13734.jpg" alt="Juno">
+      <div class="info">
+        <h3>Juno</h3>
+        <p>🚀 Anno di lancio: 2011</p>
+        <p>💨 Velocità: 265 km/s (massima durante flyby)</p>
+        <p>🌍 Distanza: in orbita attorno a Giove</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/SOHO.jpg" alt="SOHO">
+      <div class="info">
+        <h3>SOHO</h3>
+        <p>🚀 Anno di lancio: 1995</p>
+        <p>💨 Velocità: ~1 km/s</p>
+        <p>🌍 Distanza: ~1.5 milioni km dalla Terra</p>
+      </div>
+    </div>
+
+    <div class="sonda">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Cassini_Spacecraft_Model.png" alt="Cassini">
+      <div class="info">
+        <h3>Cassini</h3>
+        <p>🚀 Anno di lancio: 1997</p>
+        <p>💨 Velocità: 19 km/s</p>
+        <p>🌍 Distanza: missione terminata nel 2017</p>
+      </div>
+    </div>
+
+  </div>
+</section>
